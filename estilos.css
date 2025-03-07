@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    background-color: #cbb7fa;
+}
+.contenedor{
+    max-width: 1300px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 12px;
+}
+.titulo{
+    font-size: 60px;
+    color: #3e308f;
+    text-shadow: 3px 3px 8px rgb(93, 93, 93);
+    margin: 0 17px 50px 17px;
+}
+.listado{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+}
+.listado__item{
+    list-style: none;
+    margin: 12px;
+    text-align: center;
+    padding: 18px;
+}
+.listado__link{
+    border-radius: 18px;
+    padding: 12px 18px;
+    border: solid 5px rgb(104, 61, 185);
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    box-shadow: 9px 9px 9px 0 black;
+}
+.listado__link:hover{
+    color: aliceblue; 
+    background-color: rgb(104, 61, 185);
+}
+.contenido{
+    margin: 200px auto;
+    text-align: center;
+    padding: 0 80px;
+}
+.contenido__titulo{
+    font-size: 50px;
+    color: #3e308f;
+    text-shadow: 3px 3px 8px rgb(93, 93, 93);
+}
+.contenido__parrafo{
+    margin: 60px 60px;
+    font-size: 20px;
+}
+.contenido__boton{
+    border: solid 4px rgb(104, 61, 185);
+    padding: 17px;
+    border-radius: 18px;
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}
+.contenido__boton:hover{
+    background-color: rgb(104, 61, 185);
+    color: aliceblue;
+}
+@media(width  < 1153px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media(width  < 1031px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media(width  < 911px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media(width  < 788px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media(width  < 666px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+}
